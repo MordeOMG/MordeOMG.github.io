@@ -1,0 +1,20 @@
+
+    .fondo{
+      text-align: center;
+      align-items: center;
+      background-image: url(https://previews.123rf.com/images/el4anes/el4anes1612/el4anes161200467/69092536-gatti-colorati-dei-cartoni-animati-carta-da-parati-senza-cuciture.jpg);
+      margin-left: auto;
+      margin-right:auto;
+    }
+    .fondotxt{
+      background-color:rgb(154, 209, 228);
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .imgcenter{
+      display:flex;
+      justify-content: center;
+      align-items: center
+    }
