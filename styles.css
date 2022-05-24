@@ -1,5 +1,7 @@
-
-    .fondo{
+    .fondot{
+      background-color: rgb(139, 213, 238)
+}
+   .fondo{
       text-align: center;
       align-items: center;
       background-image: url(https://previews.123rf.com/images/el4anes/el4anes1612/el4anes161200467/69092536-gatti-colorati-dei-cartoni-animati-carta-da-parati-senza-cuciture.jpg);
@@ -18,3 +20,4 @@
       justify-content: center;
       align-items: center
     }
+
