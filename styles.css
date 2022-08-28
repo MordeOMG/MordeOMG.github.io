@@ -1,23 +1,65 @@
-    .fondot{
-      background-color: rgb(139, 213, 238)
+*{
+	margin: 0;
+	padding: 0;
 }
-   .fondo{
-      text-align: center;
-      align-items: center;
-      background-image: url(https://previews.123rf.com/images/el4anes/el4anes1612/el4anes161200467/69092536-gatti-colorati-dei-cartoni-animati-carta-da-parati-senza-cuciture.jpg);
-      margin-left: auto;
-      margin-right:auto;
-    }
-    .fondotxt{
-      background-color:rgb(154, 209, 228);
-      width: 50%;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
-    .imgcenter{
-      display:flex;
-      justify-content: center;
-      align-items: center
-    }
+body{
+	background-color: lightseagreen;
+	color: #000;
+	font-family: 'roboto', sans-serif;
+}
+.logo{
+	height: 30px
+}
+.contenedor{
+	width: 85%;
+	max-width: 1000px;
+	margin: 25px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto)
+}
+.contenedor > div,
+.contenedor .encabezado,
+.contenedor .pie,
+.contenedor .Sidebar,
+.contenedor .contenido
+{
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px
+}
+.contenedor .encabezado{
+	background: rgb(97, 210, 255);
+	color: white;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.contenedor .contenido{
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.contenedor .pie{
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.witget-1{
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.contenedor .Sidebar{
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
 
+@media screen and (max-width: 670px){
+	.contenedor .contenido{
+		grid-column-start: 1;
+		grid-column-end: 4;
+
+	}
+	.contenedor .Sidebar{
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+}
