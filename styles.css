@@ -75,9 +75,27 @@ body{
 	font-size: 26px;
 	padding-bottom: 15px
 }
-
-
 @media screen and (max-width: 980px){
+	.contenedor .contenido{
+		grid-column-start: 1;
+		grid-column-end: 2;
+
+	}
+	.contenedor .Sidebar{
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+	.contenedor .witget-1{
+		grid-column-start: 1;
+		grid-column-end: 5
+	}
+	.contenedor .witget-2{
+		grid-column-start: 1;
+		grid-column-end: 5
+	}
+
+}
+@media screen and (max-width: 636px){
 	.contenedor .contenido{
 		grid-column-start: 1;
 		grid-column-end: 5;
