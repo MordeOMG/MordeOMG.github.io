@@ -10,7 +10,8 @@ body{
 .contenedor{
 	width: 85%;
 	max-width: 1000px;
-	margin: 25px auto;
+	margin-left: auto;
+	margin-right: auto;
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: repeat(3, auto);
@@ -85,7 +86,6 @@ table{
 .med, .u{
 	padding-right: 30px;
 	padding-left: 5px;
-	/*border: 1px solid black*/
 }
 
 /*.uhr{
@@ -111,7 +111,7 @@ table{
 	place-items: center;
 }
 
-@media screen and (max-width: 980px){
+@media screen and (max-width: 950px){
 	.contenedor .contenido{
 		grid-column-start: 1;
 		grid-column-end: 2;
@@ -135,6 +135,9 @@ table{
 
 
 @media screen and (max-width: 636px){
+	.contenedor{
+		max-width: 300px
+	}
 	.contenedor .contenido{
 		grid-column-start: 1;
 		grid-column-end: 5;
@@ -144,12 +147,13 @@ table{
 		grid-column-start: 1;
 		grid-column-end: 5;
 	}
+
 	.contenedor .witget-1{
 		grid-column-start: 1;
 		grid-column-end: 5;
 	}
 	.contenedor .witget-2{
 		grid-column-start: 1;
-		grid-column-end: 5
+		grid-column-end: 5;
 	}
 }
